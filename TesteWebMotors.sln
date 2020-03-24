@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteWebMotors", "TesteWebMotors\TesteWebMotors.csproj", "{E45610D3-095B-405E-85F3-4F96F131CCC6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TesteWebMotors", "TesteWebMotors\TesteWebMotors.csproj", "{E45610D3-095B-405E-85F3-4F96F131CCC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteWebMotors.AppService", "TesteWebMotors.AppService\TesteWebMotors.AppService.csproj", "{9B1B6B3D-15BF-4259-8E75-73B6E9675BF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TesteWebMotors.AppService", "TesteWebMotors.AppService\TesteWebMotors.AppService.csproj", "{9B1B6B3D-15BF-4259-8E75-73B6E9675BF9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteWebMotors.Model", "TesteWebMotors.Model\TesteWebMotors.Model.csproj", "{2A8D7497-9409-4928-85D0-E74951A510C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TesteWebMotors.Model", "TesteWebMotors.Model\TesteWebMotors.Model.csproj", "{2A8D7497-9409-4928-85D0-E74951A510C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteWebMotors.Repository", "TesteWebMotors.Repository\TesteWebMotors.Repository.csproj", "{5B133326-D3EB-4513-B89E-3B64FACA2AF5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TesteWebMotors.Repository", "TesteWebMotors.Repository\TesteWebMotors.Repository.csproj", "{5B133326-D3EB-4513-B89E-3B64FACA2AF5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
