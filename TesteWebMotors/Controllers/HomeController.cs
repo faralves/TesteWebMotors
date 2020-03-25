@@ -62,7 +62,17 @@ namespace TesteWebMotors.Controllers
             AnuncioView accView = response.AnuncioView;
             return RedirectToAction("Index");
         }
+
         public IActionResult Excluir(int idAnuncio)
+        {
+            BuscarAnuncioResponse response = _applicationTesteWebMotorsService.BuscarAnuncio(idAnuncio);
+            AnuncioView accView = response.AnuncioView;
+
+            return View(accView);
+        }
+
+
+        public IActionResult Deletar(int idAnuncio)
         {
             ExcluirAnuncioResponse response = _applicationTesteWebMotorsService.ExcluirAnuncio(idAnuncio);
             AnuncioView accView = response.AnuncioView;

@@ -13,6 +13,7 @@ using Microsoft.Extensions.Hosting;
 using TesteWebMotors.AppService;
 using TesteWebMotors.Model;
 using TesteWebMotors.Model.Contract;
+using TesteWebMotors.Models;
 using TesteWebMotors.Repository;
 
 namespace TesteWebMotors
@@ -51,7 +52,7 @@ namespace TesteWebMotors
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IServiceProvider services)
         {
             if (env.IsDevelopment())
             {
@@ -73,6 +74,8 @@ namespace TesteWebMotors
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
+
+            SeedData.SeedDatabase(services.GetRequiredService<TesteWebMotorsContext>());
         }
     }
 }

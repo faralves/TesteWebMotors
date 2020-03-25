@@ -78,7 +78,7 @@ namespace TesteWebMotors.Model
             IList<Anuncio> anuncios = new List<Anuncio>();
             anuncios = _repositorio.PesquisarTodosAnuncios();
 
-            if (anuncios == null)
+            if (anuncios == null || anuncios?.Count <= 0)
             {
                 if (client == null)
                 {

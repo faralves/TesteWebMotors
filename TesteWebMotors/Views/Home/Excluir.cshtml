@@ -1,0 +1,75 @@
+﻿@using TesteWebMotors.AppService.ViewModel
+@model AnuncioView
+@{
+    ViewData["Title"] = "Excluir";
+}
+
+</p>
+<h3>Tem Certeza que deseja excluir este anuncio?</h3>
+</p>
+
+@using (Html.BeginForm())
+{
+
+    <div class="form-horizontal">
+
+        <hr />
+        @Html.HiddenFor(model => model.Id)
+        <dl class="row">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Marca)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Marca)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Modelo)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Modelo)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Ano)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Ano)
+            </dd>
+
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Ano)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Ano)
+            </dd>
+
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Observacao)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Observacao)
+            </dd>
+
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Quilometragem)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Quilometragem)
+            </dd>
+
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Versao)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Versao)
+            </dd>
+
+        </dl>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                @Html.ActionLink("Excluir", "Deletar", new { idAnuncio = Model.Id }, new { @class = "btn btn-danger" }) |
+                @Html.ActionLink("Voltar a listagem", "Index")
+            </div>
+        </div>
+    </div>
+}
